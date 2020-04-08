@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head><base href="/PerlForProgrammers">
+    
+    
+    
+		<meta charset="utf-8">
+
+    <title>Perl For Programmers</title>
+
+    <meta content="defies description" name="description">
+    <meta content="somebody pretty cool" name="author">
+
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+		<link href="revealjs/css/reveal.css" rel="stylesheet">
+    
+    <link href="revealjs/css/theme/black.css" id="theme" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link href="revealjs/lib/css/zenburn.css" rel="stylesheet">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'revealjs/css/print/pdf.css' : 'revealjs/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="revealjs/lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+    
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section data-markdown="presentation.md"></section>
+
+			</div>
+
+		</div>
+
+		<script src="revealjs/lib/js/head.min.js"></script>
+		<script src="revealjs/js/reveal.js"></script>
+
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+      
+      var init = {"center":true,"controls":true,"history":true,"progress":true,"transition":"slide"};
+			// Optional reveal.js plugins
+      init.dependencies = [
+        { src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'revealjs/plugin/zoom-js/zoom.js', async: true },
+        { src: 'revealjs/plugin/notes/notes.js', async: true },
+        { src: 'reveal-sampler/sampler.js' }
+      ];
+
+      
+			Reveal.initialize(init);
+
+		</script>
+
+    
+	</body>
+</html>
